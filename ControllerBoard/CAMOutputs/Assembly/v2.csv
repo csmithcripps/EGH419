@@ -9,7 +9,7 @@
 "3";"10µF";"CAP_CERAMIC0805-NOOUTLINE";"0805-NO";"C5, C8, C9";"Ceramic Capacitors";"";"";"";"";"";"";"";"";
 "1";"1K";"RESISTOR_0603_NOOUT";"0603-NO";"R3";"Resistors";"";"";"";"";"";"";"";"";
 "1";"1k";"R-US_R0603";"R0603";"R5";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";
-"2";"1uF";"CAP_CERAMIC0603_NO";"0603-NO";"C7, C14";"Ceramic Capacitors";"";"";"";"";"";"";"";"";
+"1";"1uF";"CAP_CERAMIC0603_NO";"0603-NO";"C7";"Ceramic Capacitors";"";"";"";"";"";"";"";"";
 "6";"B3F-4050";"B3F-4050";"SW_B3F-4050";"S1, S2, S3, S4, S5, S6";"";"";" Tactile Switch SPST-NO Top Actuated Through Hole ";"SW413-ND";"Omron Electronics";"B3F-4050";"None";"";"https://pricing.snapeda.com/search/part/B3F-4050/?ref=eda";
 "1";"GREEN";"LED0805_NOOUTLINE";"CHIPLED_0805_NOOUTLINE";"ON4";"LED";"";"";"";"";"";"";"";"";
 "2";"JOYSTICKPTH";"JOYSTICKPTH";"JOYSTICK";"U1, U3";"Thumb Joystick";"";"";"";"";"";"";"";"";

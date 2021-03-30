@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : C:/Users/CodyS/OneDrive/Documents/EAGLE/projects/ControllerBoard/v2.brd
 
-Start at      : 15:07:43 (29/03/2021)
-End at        : 15:09:51 (29/03/2021)
-Elapsed time  : 00:02:05
+Start at      : 16:12:37 (30/03/2021)
+End at        : 16:14:09 (30/03/2021)
+Elapsed time  : 00:00:32
 
-Signals       :    30   RoutingGrid: 4.92126 mil  Layers: 2
-Connections   :   103   predefined:  44 ( 0 Vias )
+Signals       :    28   RoutingGrid: 4.92126 mil  Layers: 2
+Connections   :   113   predefined:  51 ( 0 Vias )
 
-Router memory :   6387472
+Router memory :   6685952
 
-Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:01:40  00:00:06  00:00:06  00:00:06  00:00:07
-Number of Ripups  :       108         0         0         0         0
-max. Level        :         3         0         0         0         0
-max. Total        :        11         0         0         0         0
+Time per pass     :  00:00:00  00:00:08  00:00:07  00:00:05  00:00:05  00:00:07
+Number of Ripups  :         0         1         0         0         0         0
+max. Level        :         0         1         0         0         0         0
+max. Total        :         0         2         0         0         0         0
 
-Routed            :        53        54        54        54        54
-Vias              :        78        72        72        70        67
-Resolution        :    94.2 %    95.1 %    95.1 %    95.1 %    95.1 %
+Routed            :         7        61        61        61        61        61
+Vias              :         0       109        70        70        67        63
+Resolution        :    51.3 %    99.1 %    99.1 %    99.1 %    99.1 %    99.1 %
 
-Final             : 86.4% finished. Polygons may have fallen apart.
+Final             : 93.8% finished. Polygons may have fallen apart.

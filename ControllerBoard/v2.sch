@@ -4900,7 +4900,7 @@ JST PH 2-pin thru-home side entry</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.25" drill="0.3">
+<class number="0" name="default" width="0.15" drill="0.3">
 <clearance class="0" value="0.2"/>
 </class>
 <class number="1" name="USB" width="0" drill="0.3">
@@ -4909,7 +4909,7 @@ JST PH 2-pin thru-home side entry</description>
 <class number="3" name="usbvcc" width="0" drill="0.3">
 <clearance class="3" value="0.2"/>
 </class>
-<class number="4" name="5V" width="1" drill="0.3">
+<class number="4" name="5V" width="0.4" drill="0.3">
 <clearance class="4" value="0.4"/>
 </class>
 </classes>
@@ -4937,8 +4937,6 @@ JST PH 2-pin thru-home side entry</description>
 <part name="C8" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10µF"/>
 <part name="U$29" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$30" library="microbuilder" deviceset="GND" device=""/>
-<part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="C14" library="microbuilder" deviceset="CAP_CERAMIC" device="0603_NO" value="1uF"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="U$2" library="microbuilder" deviceset="VBUS" device=""/>
 <part name="U$21" library="microbuilder" deviceset="VBAT" device=""/>
@@ -4986,6 +4984,9 @@ JST PH 2-pin thru-home side entry</description>
 <part name="S5" library="B3F-4050" deviceset="B3F-4050" device=""/>
 <part name="S6" library="B3F-4050" deviceset="B3F-4050" device=""/>
 <part name="CN1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="JST_2PIN" device="-THM-RA" package3d_urn="urn:adsk.eagle:package:6240694/1"/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="U$8" library="microbuilder" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5079,13 +5080,6 @@ JST PH 2-pin thru-home side entry</description>
 </instance>
 <instance part="U$30" gate="G$1" x="-210.82" y="200.66" smashed="yes">
 <attribute name="VALUE" x="-212.344" y="198.12" size="1.27" layer="96"/>
-</instance>
-<instance part="GND12" gate="1" x="-154.94" y="200.66" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="-152.4" y="198.12" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="C14" gate="G$1" x="-154.94" y="210.82" smashed="yes">
-<attribute name="NAME" x="-157.23" y="212.07" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
-<attribute name="VALUE" x="-152.64" y="212.07" size="1.27" layer="96" font="vector" rot="R90" align="center"/>
 </instance>
 <instance part="+3V4" gate="G$1" x="-180.34" y="233.68" smashed="yes" rot="MR0"/>
 <instance part="U$2" gate="G$1" x="-231.14" y="233.68" smashed="yes">
@@ -5243,6 +5237,15 @@ JST PH 2-pin thru-home side entry</description>
 <attribute name="NAME" x="-161.29" y="207.645" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-161.29" y="218.44" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="GND16" gate="1" x="-254" y="17.78" smashed="yes">
+<attribute name="VALUE" x="-256.54" y="15.24" size="1.778" layer="96"/>
+</instance>
+<instance part="GND17" gate="1" x="-129.54" y="10.16" smashed="yes">
+<attribute name="VALUE" x="-132.08" y="7.62" size="1.778" layer="96"/>
+</instance>
+<instance part="U$8" gate="G$1" x="-246.38" y="96.52" smashed="yes">
+<attribute name="VALUE" x="-247.904" y="97.536" size="1.27" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5291,11 +5294,6 @@ JST PH 2-pin thru-home side entry</description>
 <pinref part="C8" gate="G$1" pin="2"/>
 <pinref part="U$29" gate="G$1" pin="GND"/>
 <wire x1="-187.96" y1="205.74" x2="-187.96" y2="203.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND12" gate="1" pin="GND"/>
-<pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="-154.94" y1="208.28" x2="-154.94" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="GND"/>
@@ -5361,6 +5359,7 @@ JST PH 2-pin thru-home side entry</description>
 <wire x1="-45.72" y1="15.24" x2="-45.72" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="22.86" x2="-50.8" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
+<junction x="-45.72" y="22.86"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -5391,6 +5390,42 @@ JST PH 2-pin thru-home side entry</description>
 <pinref part="S6" gate="G$1" pin="COM"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="-144.78" y1="154.94" x2="-144.78" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND@1"/>
+<wire x1="-210.82" y1="73.66" x2="-254" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND@2"/>
+<wire x1="-210.82" y1="53.34" x2="-254" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-254" y1="53.34" x2="-254" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND@3"/>
+<wire x1="-254" y1="35.56" x2="-254" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-210.82" y1="35.56" x2="-254" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-254" y="35.56"/>
+<wire x1="-254" y1="73.66" x2="-254" y2="53.34" width="0.1524" layer="91"/>
+<junction x="-254" y="53.34"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND@8"/>
+<wire x1="-162.56" y1="78.74" x2="-129.54" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="78.74" x2="-129.54" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND@7"/>
+<wire x1="-129.54" y1="68.58" x2="-129.54" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="60.96" x2="-129.54" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="48.26" x2="-129.54" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="43.18" x2="-129.54" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="43.18" x2="-129.54" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-129.54" y="43.18"/>
+<pinref part="U$1" gate="G$1" pin="GND@6"/>
+<wire x1="-162.56" y1="48.26" x2="-129.54" y2="48.26" width="0.1524" layer="91"/>
+<junction x="-129.54" y="48.26"/>
+<pinref part="U$1" gate="G$1" pin="GND@5"/>
+<wire x1="-162.56" y1="60.96" x2="-129.54" y2="60.96" width="0.1524" layer="91"/>
+<junction x="-129.54" y="60.96"/>
+<pinref part="U$1" gate="G$1" pin="GND@4"/>
+<wire x1="-162.56" y1="68.58" x2="-129.54" y2="68.58" width="0.1524" layer="91"/>
+<junction x="-129.54" y="68.58"/>
+<pinref part="GND17" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="3.3V" class="4">
@@ -5457,16 +5492,6 @@ JST PH 2-pin thru-home side entry</description>
 <label x="-144.78" y="226.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="SEL+"/>
-<wire x1="86.36" y1="172.72" x2="78.74" y2="172.72" width="0.1524" layer="91"/>
-<label x="78.74" y="172.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U3" gate="G$1" pin="SEL+"/>
-<wire x1="86.36" y1="213.36" x2="78.74" y2="213.36" width="0.1524" layer="91"/>
-<label x="78.74" y="213.36" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U2" gate="A" pin="VDD"/>
 <wire x1="-50.8" y1="66.04" x2="-45.72" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="66.04" x2="-45.72" y2="78.74" width="0.1524" layer="91"/>
@@ -5492,6 +5517,17 @@ JST PH 2-pin thru-home side entry</description>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="-144.78" y1="132.08" x2="-144.78" y2="134.62" width="0.1524" layer="91"/>
 <label x="-152.4" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="3.3V"/>
+<pinref part="U$1" gate="G$1" pin="3V3@1"/>
+<wire x1="-246.38" y1="93.98" x2="-246.38" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-246.38" y1="83.82" x2="-228.6" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="3V3@2"/>
+<wire x1="-228.6" y1="83.82" x2="-210.82" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-210.82" y1="63.5" x2="-228.6" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-228.6" y1="63.5" x2="-228.6" y2="83.82" width="0.1524" layer="91"/>
+<junction x="-228.6" y="83.82"/>
 </segment>
 </net>
 <net name="BATTERY_SENSE" class="0">
@@ -5623,13 +5659,6 @@ JST PH 2-pin thru-home side entry</description>
 <wire x1="-238.76" y1="43.18" x2="-210.82" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="AREF" class="0">
-<segment>
-<pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="-154.94" y1="215.9" x2="-154.94" y2="226.06" width="0.1524" layer="91"/>
-<label x="-154.94" y="218.44" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
 <net name="VBUS" class="4">
 <segment>
 <pinref part="U$2" gate="G$1" pin="VBUS"/>
@@ -5719,20 +5748,6 @@ JST PH 2-pin thru-home side entry</description>
 <pinref part="U4" gate="G$1" pin="EN"/>
 <wire x1="-213.36" y1="218.44" x2="-210.82" y2="218.44" width="0.1524" layer="91"/>
 <label x="-218.44" y="208.28" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="B_1" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="SEL-"/>
-<wire x1="86.36" y1="210.82" x2="83.82" y2="210.82" width="0.1524" layer="91"/>
-<label x="81.28" y="210.82" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="B_2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="SEL-"/>
-<wire x1="86.36" y1="170.18" x2="83.82" y2="170.18" width="0.1524" layer="91"/>
-<label x="78.74" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -5844,6 +5859,29 @@ JST PH 2-pin thru-home side entry</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,-180.34,231.14,+3V3,3.3V,,,,"/>
+<approved hash="102,1,-190.5,220.98,OUT,3.3V,,,,"/>
+<approved hash="102,1,-144.78,223.52,+3V3,3.3V,,,,"/>
+<approved hash="102,1,-210.82,83.82,3V3,3.3V,,,,"/>
+<approved hash="102,1,-210.82,63.5,3V3,3.3V,,,,"/>
+<approved hash="104,1,-210.82,220.98,U4,IN,VBUS,,,"/>
+<approved hash="104,1,-63.5,220.98,U5,VDD,VBUS,,,"/>
+<approved hash="104,1,-38.1,215.9,U5,VSS,GND,,,"/>
+<approved hash="202,1,-86.36,45.72,U2,CH5,,,,"/>
+<approved hash="202,1,-86.36,43.18,U2,CH6,,,,"/>
+<approved hash="202,1,-86.36,40.64,U2,CH7,,,,"/>
+<approved hash="104,1,-50.8,66.04,U2,VDD,3.3V,,,"/>
+<approved hash="104,1,-50.8,25.4,U2,AGND,GND,,,"/>
+<approved hash="104,1,-50.8,22.86,U2,DGND,GND,,,"/>
+<approved hash="117,1,-162.56,83.82,5V0@1,,,,,"/>
+<approved hash="117,1,-162.56,81.28,5V0@2,,,,,"/>
+<approved hash="106,1,-49.53,177.8,D_N,,,,,"/>
+<approved hash="106,1,-49.53,175.26,D_P,,,,,"/>
+<approved hash="106,1,-162.56,35.56,N$7,,,,,"/>
+<approved hash="113,1,-168.25,227.33,SW4,,,,,"/>
+<approved hash="113,1,-165.337,210.594,CN1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

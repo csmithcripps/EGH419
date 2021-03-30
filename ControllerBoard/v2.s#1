@@ -4900,7 +4900,7 @@ JST PH 2-pin thru-home side entry</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.25" drill="0.3">
+<class number="0" name="default" width="0.15" drill="0.3">
 <clearance class="0" value="0.2"/>
 </class>
 <class number="1" name="USB" width="0" drill="0.3">
@@ -4909,7 +4909,7 @@ JST PH 2-pin thru-home side entry</description>
 <class number="3" name="usbvcc" width="0" drill="0.3">
 <clearance class="3" value="0.2"/>
 </class>
-<class number="4" name="5V" width="1" drill="0.3">
+<class number="4" name="5V" width="0.4" drill="0.3">
 <clearance class="4" value="0.4"/>
 </class>
 </classes>
@@ -5799,6 +5799,11 @@ JST PH 2-pin thru-home side entry</description>
 <pinref part="S2" gate="G$1" pin="NO"/>
 <junction x="-294.64" y="119.38"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO19"/>
+<wire x1="-210.82" y1="40.64" x2="-238.76" y2="40.64" width="0.1524" layer="91"/>
+<label x="-246.38" y="40.64" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="BTN_E" class="0">
 <segment>
@@ -5809,6 +5814,11 @@ JST PH 2-pin thru-home side entry</description>
 <pinref part="S3" gate="G$1" pin="NO"/>
 <junction x="-220.98" y="119.38"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO26"/>
+<wire x1="-210.82" y1="38.1" x2="-238.76" y2="38.1" width="0.1524" layer="91"/>
+<label x="-246.38" y="38.1" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="BTN_F" class="0">
 <segment>
@@ -5818,6 +5828,17 @@ JST PH 2-pin thru-home side entry</description>
 <label x="-165.1" y="119.38" size="1.778" layer="95"/>
 <pinref part="S4" gate="G$1" pin="NO"/>
 <junction x="-144.78" y="119.38"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO20"/>
+<wire x1="-162.56" y1="38.1" x2="-144.78" y2="38.1" width="0.1524" layer="91"/>
+<label x="-144.78" y="38.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO21"/>
+<wire x1="-162.56" y1="35.56" x2="-144.78" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

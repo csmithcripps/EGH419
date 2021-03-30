@@ -1,0 +1,7 @@
+Partlist exported from C:/Users/CodyS/OneDrive/Documents/EAGLE/projects/L298_Motor_Driver/L298_Motor_Driver_Module.sch at 30/03/2021 3:13 PM
+
+Qty Value      Device               Package     Parts                          Description                                          MF    MPN        OC_FARNELL OC_NEWARK POPULARITY
+2              22-23-2061           22-23-2061  OUTPUT1, OUTPUT2               .100" (2.54mm) Center Header - 6 Pin                 MOLEX 22-23-2061 1462922    27C1933   6         
+8              SCHOTTKY-DIODEDO35-7 DO35-7      D1, D2, D3, D4, D5, D6, D7, D8 Schottky Diode                                                                             3         
+1   87758-1416 87758-1416           87758-1416  INPUT                          14 Pin - 2mm Dual Row Single Wafer, Vertical T/H HDR MOLEX 87758-1416 7472358    59J1562   0         
+1   L298       L298                 MULTIWATT15 U1                             L298 Dual Full Bridge Driver                                                                         

@@ -5421,13 +5421,13 @@ CONN_05
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.15" drill="0.25">
+<class number="0" name="default" width="0.254" drill="0.3">
 <clearance class="0" value="0.15"/>
 </class>
-<class number="1" name="Power" width="0.3" drill="0.25">
+<class number="1" name="Power" width="0.635" drill="0.3">
 <clearance class="1" value="0.2"/>
 </class>
-<class number="2" name="Out" width="0.2" drill="0.25">
+<class number="2" name="Out" width="0.508" drill="0.3">
 <clearance class="2" value="0.15"/>
 </class>
 </classes>
