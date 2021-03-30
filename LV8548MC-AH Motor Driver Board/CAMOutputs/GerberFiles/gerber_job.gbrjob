@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-03-30T03:14:39Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "DriverBoard"
+        },
+        "Owner": "Cody Smith-Cripps <cody.cripps@connect.qut.edu.au>",
+        "Size": {
+            "X": 17.2,
+            "Y": 17.9
+        }
+    }
+}

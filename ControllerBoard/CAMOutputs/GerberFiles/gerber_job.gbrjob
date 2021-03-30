@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-03-30T01:07:46Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "v2"
+        },
+        "Owner": "Cody Smith-Cripps <cody.cripps@connect.qut.edu.au>",
+        "Size": {
+            "X": 163,
+            "Y": 59
+        }
+    }
+}
