@@ -271,9 +271,9 @@ UsedLibraryUrn="urn:adsk.eagle:library:198"
 UsedLibraryUrn="urn:adsk.eagle:library:199"
 UsedLibrary="C:/Users/CodyS/OneDrive/Documents/EAGLE/libraries/100SP1T2B4M6QE.lbr"
 UsedLibrary="C:/Users/CodyS/OneDrive/Documents/EAGLE/libraries/B3F-4050.lbr"
-UsedLibrary="C:/Users/CodyS/OneDrive/Documents/EAGLE/libraries/diy-modules.lbr"
 UsedLibrary="C:/Users/CodyS/OneDrive/Documents/EAGLE/libraries/DRIVER-LV8548MC-AH_SOIC10_.lbr"
 UsedLibrary="C:/Users/CodyS/OneDrive/Documents/EAGLE/libraries/LV8548MCDriverBoard.lbr"
+UsedLibrary="C:/Users/CodyS/OneDrive/Documents/EAGLE/libraries/diy-modules.lbr"
 
 [Win_1]
 Type="Control Panel"

@@ -8250,18 +8250,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="17.78" y1="-12.7" x2="7.62" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="-12.7" x2="7.62" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="X3" gate="-3" pin="S"/>
-<wire x1="195.58" y1="27.94" x2="187.96" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="SUPPLY11" gate="GND" pin="GND"/>
-<wire x1="187.96" y1="22.86" x2="187.96" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X4" gate="-3" pin="S"/>
-<wire x1="195.58" y1="48.26" x2="187.96" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="SUPPLY10" gate="GND" pin="GND"/>
-<wire x1="187.96" y1="43.18" x2="187.96" y2="48.26" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="VMOT" class="1">
 <segment>
@@ -8568,6 +8556,20 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="J1" gate="G$1" pin="GP25"/>
 <wire x1="48.26" y1="83.82" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
 <label x="55.88" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="X4" gate="-3" pin="S"/>
+<wire x1="195.58" y1="48.26" x2="187.96" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="GND" pin="GND"/>
+<wire x1="187.96" y1="43.18" x2="187.96" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X3" gate="-3" pin="S"/>
+<wire x1="195.58" y1="27.94" x2="187.96" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="SUPPLY11" gate="GND" pin="GND"/>
+<wire x1="187.96" y1="22.86" x2="187.96" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SERVO1" class="0">
