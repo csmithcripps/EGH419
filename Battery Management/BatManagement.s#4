@@ -7863,11 +7863,11 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.3" drill="0.25">
+<class number="0" name="default" width="0.4" drill="0.25">
 <clearance class="0" value="0.2"/>
 </class>
-<class number="1" name="Power" width="0.6" drill="0.3">
-<clearance class="1" value="0.5"/>
+<class number="1" name="Power" width="0.7" drill="0.3">
+<clearance class="1" value="0.3"/>
 </class>
 </classes>
 <parts>
@@ -8619,6 +8619,16 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="J1" gate="G$1" pin="GP24"/>
 <wire x1="48.26" y1="86.36" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
 <label x="55.88" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PI5V" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="5V@4"/>
+<pinref part="J1" gate="G$1" pin="5V@2"/>
+<wire x1="17.78" y1="127" x2="17.78" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="129.54" x2="5.08" y2="129.54" width="0.1524" layer="91"/>
+<junction x="17.78" y="129.54"/>
+<label x="0" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
