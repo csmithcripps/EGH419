@@ -4909,7 +4909,7 @@ JST PH 2-pin thru-home side entry</description>
 <class number="3" name="usbvcc" width="0" drill="0.3">
 <clearance class="3" value="0.2"/>
 </class>
-<class number="4" name="5V" width="1" drill="0.3">
+<class number="4" name="5V" width="0.5" drill="0.3">
 <clearance class="4" value="0.4"/>
 </class>
 </classes>
